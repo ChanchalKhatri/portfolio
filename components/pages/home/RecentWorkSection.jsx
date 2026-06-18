@@ -13,13 +13,13 @@ const projects = [
     title: "Trello Clone",
     category: "MERN Stack Development",
     img: "/chat.png",
-    link: "https://www.google.com/",
+    link: "https://github.com/ChanchalKhatri/srello",
   },
   {
     title: "Live Chat App",
     category: "MERN Stack Development",
     img: "/srello.png",
-    link: "https://www.youtube.com/",
+    link: "https://github.com/ChanchalKhatri/chat_app",
   },
 ];
 
