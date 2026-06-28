@@ -1,10 +1,11 @@
 import Navbar from "@/components/layouts/Navbar";
 import SmoothScroll from "@/components/common/SmoothScroll";
 import "./globals.css";
+import Footer from "@/components/layouts/Footer";
 
 export const metadata = {
-  title: "Chanchal Kumar",
-  description: "Chanchal Kumar Portfolio",
+  title: "Chanchal Khatri",
+  description: "Chanchal Khatri Portfolio",
 };
 
 export default function RootLayout({ children }) {
@@ -14,6 +15,7 @@ export default function RootLayout({ children }) {
         <SmoothScroll />
         <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );
