@@ -242,7 +242,7 @@ export default function RecentWorkSection() {
                 >
                   {/* Mobile View */}
                   <div className="block md:hidden w-full py-10 border-b border-[#d8d8d8]">
-                    <div className="w-full aspect-[16/10] bg-[#f3f3f3] overflow-hidden mb-6 relative">
+                    <div className="w-full aspect-16/10 bg-[#f3f3f3] overflow-hidden mb-6 relative">
                       <Image
                         src={project.img}
                         alt={project.title}

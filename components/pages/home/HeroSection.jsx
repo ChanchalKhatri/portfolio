@@ -18,7 +18,7 @@ const TYPED_LINES = [
 ];
 
 const FLOAT_BADGES = [
-  { label: "TypeScript", color: "#3178c6", delay: 0.2, x: "18%", y: "22%" },
+  { label: "JavaScript", color: "#3178c6", delay: 0.2, x: "18%", y: "22%" },
   { label: "Tailwind CSS", color: "#38bdf8", delay: 0.5, x: "62%", y: "18%" },
   { label: "REST API", color: "#ff6b6b", delay: 0.8, x: "75%", y: "68%" },
   { label: "Git & GitHub", color: "#f0883e", delay: 1.1, x: "10%", y: "72%" },
@@ -151,8 +151,8 @@ function StatsRow() {
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   const stats = [
-    { value: "2+", label: "Years Exp." },
-    { value: "15+", label: "Projects" },
+    { value: "1+", label: "Years Exp." },
+    { value: "10+", label: "Projects" },
     { value: "∞", label: "Curiosity" },
   ];
   return (

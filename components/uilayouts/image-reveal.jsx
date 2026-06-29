@@ -1,6 +1,5 @@
 "use client";
 
-import Link from "next/link";
 import { motion, useSpring } from "motion/react";
 import React, { useRef, useState } from "react";
 import { Magnetic } from "@/components/ui/magnetic";
@@ -109,6 +108,7 @@ export default function ImageReveal({
         >
           <div className="relative h-[280px] w-[400px] overflow-hidden rounded-2xl">
             <Image
+              key={img.src}
               src={img.src}
               alt={img.alt}
               width={400}
@@ -118,14 +118,11 @@ export default function ImageReveal({
 
             <div className="pointer-events-none absolute inset-0 flex items-center justify-center">
               <Magnetic intensity={1.2}>
-                <Link
-                  href={img.link || "#"}
-                  className="pointer-events-auto flex h-26 w-26 items-center justify-center rounded-full bg-[#455ce9] text-lg font-medium text-white shadow-xl"
-                >
+                <div className="pointer-events-none flex h-26 w-26 items-center justify-center rounded-full bg-[#455ce9] text-lg font-medium text-white shadow-xl">
                   <Magnetic intensity={0.9}>
                     <span className="text-sm">View</span>
                   </Magnetic>
-                </Link>
+                </div>
               </Magnetic>
             </div>
           </div>
