@@ -151,7 +151,7 @@ function StatsRow() {
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   const stats = [
-    { value: "1+", label: "Years Exp." },
+    { value: "2+", label: "Years Exp." },
     { value: "10+", label: "Projects" },
     { value: "∞", label: "Curiosity" },
   ];
